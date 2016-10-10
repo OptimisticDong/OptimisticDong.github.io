@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.5625vw;
+  font-family: "Microsoft YaHei UI";
+  height: 100%;
+
+}
+.c1 {
+  height: 30%;
+}
+.c2 {
+  height: 70%;
+}
+.img-qzb {
+  height: 100%;
+  width: 100%;
+}
+.r1,.r2,.r3,.r4,.r5 {
+  height: 18%;
+  background-color: #ffffff;
+  margin-top: 2%;
+}
+.btn {
+  background-color: #322c03;
+}
+a {
+  color: #fadc0f;
+}
+span {
+  line-height: 60px;
+  font-size: 25px;
+}
+
