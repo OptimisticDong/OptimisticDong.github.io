@@ -23,6 +23,7 @@
   background-color: #efefef;
 }*/
 
+
 /* 第一页 */
 .col-md-4 {
   text-align: center;
@@ -33,6 +34,11 @@
   width: 120px;
   left: 10px;
   z-index: 1;
+
+  animate-duration: 3s;    //动画持续时间
+  animate-delay: 5s;    //动画延迟时间
+  animate-iteration-count: 2;    //动画执行次数
+
 }
 
 .name {
@@ -83,7 +89,7 @@
   margin: 0 auto;
 }
 
-.text-center {
+.center {
   color: #fff;
   font-size: 20px;
   font-weight: 800;
@@ -100,7 +106,9 @@
 }
 
 .s2 span {
-  color: #63f4f9;
+  color: #38eece;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* 第三页 */
