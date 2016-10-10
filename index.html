@@ -150,15 +150,31 @@
       scrollOverflow:true,
       anchors:['page1','page2','page3','page4','page5','page6'],
 
+
       afterLoad: function (anchorLink, index) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#s1_app').hide();
+        $('#s1_girl ').hide();
+        $('#s1_iot ').hide();
+        $('#s1_coder ').hide();
+        $('#s1_recruit').hide();
+
+        $('.circle').hide();
+        $('#s2_textUp').hide();
+        $('#s2-logo').hide();
+        $('#s2_textDown').hide();
+
+        $('.s3 h2').hide();
+        $('.s3 p').hide();
+        $('.s3 img').hide();
+
+        $('.like').hide();
+        $('#s4_img1').hide();
+        $('#s4_img2').hide();
+        $('#s4_img3').hide();
+
         switch (index) {
           case 1:
-            $('#s1_app').hide();
-            $('#s1_girl ').hide();
-            $('#s1_iot ').hide();
-            $('#s1_coder ').hide();
-            $('#s1_recruit').hide();
 
             $('#s1_coder').show().addClass('animated zoomInUp').one(animationEnd, function() {
               $('#s1_coder').removeClass('animated zoomInUp');
@@ -179,10 +195,6 @@
             });
             break;
           case 2:
-            $('.circle').hide();
-            $('#s2_textUp').hide();
-            $('#s2-logo').hide();
-            $('#s2_textDown').hide();
 
             $('#circle').show().addClass('animated rubberBand').one(animationEnd,function () {
               $('#circle').removeClass('animated rubberBand');
@@ -196,9 +208,7 @@
             });
             break;
           case 3:
-            $('.s3 h2').hide();
-            $('.s3 p').hide();
-            $('.s3 img').hide();
+
 
             $('.s3 h2').show().addClass('animated bounceIn').one(animationEnd,function () {
               $('.s3 h2').removeClass('animated bounceIn');
@@ -212,10 +222,6 @@
             });
             break;
           case 4:
-            $('.like').hide();
-            $('#s4_img1').hide();
-            $('#s4_img2').hide();
-            $('#s4_img3').hide();
 
             $('.like').show().addClass('animated flash').one(animationEnd,function () {
               $('#s4_img1').show().addClass('animated fadeInLeft');
